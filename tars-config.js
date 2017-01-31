@@ -22,7 +22,7 @@ module.exports = {
             "useHMR": false
         },
         "jsPathsToConcatBeforeModulesJs": [
-            'node_modules/jquery/dist/jquery.min.js'
+            "node_modules/jquery/dist/jquery.min.js"
         ],
         "lintJsCodeBeforeModules": false,
         "jsPathsToConcatAfterModulesJs": [],
@@ -59,6 +59,5 @@ module.exports = {
         "staticFolderName": "static",
         "imagesFolderName": "images",
         "componentsFolderName": "components"
-    },
-    "staticPrefix": "static/"
+    }
 };
