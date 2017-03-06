@@ -1,3 +1,7 @@
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
 @mixin nl {
     margin: 0;
     padding: 0;
@@ -31,4 +35,20 @@
 @mixin opacity
 {
     opacity: .8;
+}
+@mixin absolute-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin absolute-vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin absolute-horizontal-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
