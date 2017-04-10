@@ -1,45 +1,48 @@
 ::-webkit-input-placeholder {
-    color: #000;
+	color: #000;
 }
 ::-moz-placeholder {
-    color: #000;
+	color: #000;
 }
 :-moz-placeholder {
-    color: #000;
+	color: #000;
 }
 :-ms-input-placeholder {
-    color: #000;
+	color: #000;
 }
 a {
-    text-decoration: none;
-    @include transition;
+	text-decoration: none;
+	@include transition;
 }
 .button {
-    display: inline-block;
+	display: inline-block;
 
-    cursor: pointer;
-    text-decoration: none;
+	cursor: pointer;
+	text-decoration: none;
 
-    color: $white;
-    box-sizing: border-box;
-    @include transition;
+	color: $white;
+	box-sizing: border-box;
+	@include transition;
 
-    &._small {
-        padding: 7px 25px;
-    }
-    &._big {
-        padding: 10px 50px;
-    }
+	&._small {
+		padding: 7px 25px;
+	}
+	&._big {
+		padding: 10px 50px;
+	}
+}
+.title {
+
 }
 .small-title {
-    font-size: 21px;
+	font-size: rem-calc(21);
 }
 .big-title {
-    font-size: 27px;
+	font-size: rem-calc(27);
 }
-.input-form {
-    box-sizing: border-box;
-    border: none;
-    border: 1px solid #cdcdcd;
-    border-radius: 5px;
+.form-field {
+	box-sizing: border-box;
+	border: none;
+	border: 1px solid #cdcdcd;
+	border-radius: 5px;
 }

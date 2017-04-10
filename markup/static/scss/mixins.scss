@@ -1,62 +1,61 @@
-@function rem($pixels, $context: $baseFontSize) {
-    @if (unitless($pixels)) {
-        $pixels: $pixels * 1px;
-    }
-    @if (unitless($context)) {
-        $context: $context * 1px;
-    }
-    @return $pixels / $context * 1rem;
-}
-
 @mixin nl {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 
-    list-style: none;
-    list-style-position: outside;
+	list-style: none;
+	list-style-position: outside;
 
-    text-indent: 0;
+	text-indent: 0;
 }
 @mixin cf {
-    &:before,
-    &:after {
-        display: table;
+	&:before,
+	&:after {
+		display: table;
 
-        content: "";
-    }
-    &:after {
-        clear: both;
-    }
-    .lt-ie8 & {
-        zoom: 1;
-    }
+		content: "";
+	}
+	&:after {
+		clear: both;
+	}
+	.lt-ie8 & {
+		zoom: 1;
+	}
 }
-@mixin blocksJustify {
-    text-align: justify;
-    text-justify: newspaper;
+@mixin blocks-justify {
+	text-align: justify;
+	text-justify: newspaper;
+}
+@function rem-calc($pixels, $context: $baseFontSize) {
+	@if (unitless($pixels)) {
+			$pixels: $pixels * 1px;
+	}
+	@if (unitless($context)) {
+			$context: $context * 1px;
+	}
+	@return $pixels / $context * 1rem;
 }
 @mixin transition {
-    transition: all .33s ease-in-out;
+	transition: all .33s ease-in-out;
 }
 @mixin opacity {
-    opacity: .8;
+	opacity: .8;
 }
-@mixin absoluteCenter {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+@mixin absolute-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
 
-    transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
-@mixin absoluteVerticalCenter {
-    position: absolute;
-    top: 50%;
+@mixin vertical-center {
+	position: absolute;
+	top: 50%;
 
-    transform: translateY(-50%);
+	transform: translateY(-50%);
 }
-@mixin absoluteHorizontalCenter {
-    position: absolute;
-    left: 50%;
+@mixin horizontal-center {
+	position: absolute;
+	left: 50%;
 
-    transform: translateX(-50%);
+	transform: translateX(-50%);
 }
