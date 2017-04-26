@@ -25,7 +25,7 @@
 	text-align: justify;
 	text-justify: newspaper;
 }
-@function rem-calc($pixels, $context: $baseFontSize) {
+@function rem($pixels, $context: $baseFontSize) {
 	@if (unitless($pixels)) {
 			$pixels: $pixels * 1px;
 	}
