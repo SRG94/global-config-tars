@@ -1,28 +1,22 @@
 html,
 body {
 	height: 100%;
-
+	box-sizing: border-box;	
 	color: $black;
 	background-color: $bodyBg;
-	font-family: Verdana;
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: $baseFontSize;
 }
-input,
-textarea {
-	border: none;
-	outline: none;
-	resize: none;
-}
-ol li, ul li {
-	@include nl;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 .main {
 	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;
 	max-width: 960px;
 }
-
 .overlay {
 	position: fixed;
 	z-index: 99;

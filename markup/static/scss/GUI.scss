@@ -1,14 +1,14 @@
 ::-webkit-input-placeholder {
-	color: #000;
+	color: $black;
 }
 ::-moz-placeholder {
-	color: #000;
+	color: $black;
 }
 :-moz-placeholder {
-	color: #000;
+	color: $black;
 }
 :-ms-input-placeholder {
-	color: #000;
+	color: $black;
 }
 a {
 	text-decoration: none;
@@ -21,28 +21,10 @@ a {
 	text-decoration: none;
 
 	color: $white;
-	box-sizing: border-box;
+	
 	@include transition;
-
-	&._small {
-		padding: 7px 25px;
-	}
-	&._big {
-		padding: 10px 50px;
-	}
-}
-.title {
-
-}
-.small-title {
-	font-size: rem(21);
-}
-.big-title {
-	font-size: rem(27);
 }
 .form-field {
-	box-sizing: border-box;
-	border: none;
 	border: 1px solid #cdcdcd;
 	border-radius: 5px;
 }
