@@ -4,7 +4,7 @@ body {
 	box-sizing: border-box;	
 	color: $black;
 	background-color: $bodyBg;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans';
 	font-size: $baseFontSize;
 }
 *,
@@ -12,10 +12,23 @@ body {
 *::after {
   box-sizing: inherit;
 }
-.main {
+a {
+	color: $black;
+}
+.wrapper {
 	width: 100%;
-	margin: 0 auto;
-	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+	@media screen and (max-width:960px){
+		width: auto;
+	}	
+}
+@media screen and (max-width:960px){
+	.image-responsive {
+		width: 100%;
+		height: auto;
+	}
 }
 .overlay {
 	position: fixed;

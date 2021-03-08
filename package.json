@@ -6,7 +6,9 @@
   "directories": {},
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "slick-carousel": "^1.6.0",
+    "@fancyapps/fancybox": "^3.5.7"
   },
   "devDependencies": {
     "gulp": "3.9.1"

@@ -23,8 +23,50 @@ a {
 	color: $white;
 	
 	@include transition;
+	&._red {
+		background-color: $red;
+		&:hover {
+			background-color: lighten($red, 5%);
+		}
+	}
+}
+.title {
+	color: $black;
+	text-transform: none;
+	font-size: 30px;
+	font-weight: 700;
+}
+.mobile-call {
+	display: none;
+	@extend .button;
+	font-size: 18px;
+	font-weight: 700;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 16px;
+	text-align: center;
+	@media screen and(max-width: 768px) {
+		display: block;
+	}
+	padding-bottom: 16px;
 }
 .form-field {
 	border: 1px solid #cdcdcd;
 	border-radius: 5px;
+}
+.slider-arrow {
+	&:hover {
+		color: $black;
+		//background-image: bg();
+	}	
+}
+
+
+.slider-arrow._prev {
+	@include bg($prev-arrow);
+}
+.slider-arrow._next {
+	@include bg($next-arrow);
 }

@@ -1,0 +1,36 @@
+.demo {
+	&__wrapper {
+		@extend .wrapper;
+	}
+	&-slider {
+
+	}
+}
+.demo-slider__item {
+  height: 500px;
+
+  background-repeat: no-repeat;
+  //background-position: center;
+  background-size: cover;
+} 
+.demo-slider__item._v1 {
+  background-image: url(%=static=%/assets/demo/slide1.jpg);
+}
+.demo-slider__item._v2 {
+  background-image: url(%=static=%/assets/demo/slide2.jpg);
+}
+ .demo-slider__item._v3 {
+  background-image: url(%=static=%/assets/demo/slide3.jpg);
+}
+.demo-slider__item._v4 {
+  background-image: url(%=static=%/assets/demo/slide4.jpg);
+}
+.demo-slider__item._v5 {
+  background-image: url(%=static=%/assets/demo/slide5.jpg);
+}
+.demo-slider__item._v6 {
+  background-image: url(%=static=%/assets/demo/slide6.jpg);
+}
+.demo-slider__item._v7 {
+  background-image: url(%=static=%/assets/demo/slide7.jpg);
+}

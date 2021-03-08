@@ -1,3 +1,27 @@
-extends ./layout.jade
+doctype html
+html(class="no-js", lang="ru")
 
-block content
+	include ../components/head/head
+	include ../components/header/header
+	include ../components/menu/menu
+	include ../components/demo/demo
+	include ../components/services/services
+	include ../components/portfolio/portfolio
+	include ../components/prices/prices
+	include ../components/footer/footer
+
+	head
+		+head(head.defaults)
+	body
+		+header
+		+demo
+		+services
+		+portfolio
+		+prices
+		+footer
+		a(href="tel:+998977753506" title="").mobile-call.button._red Позвонить!
+		.overlay
+		//- Main scripts. You can replace it, but I recommend you to leave it here
+		
+		script(src='%=static=%js/main%=hash=%%=min=%.js')
+		
